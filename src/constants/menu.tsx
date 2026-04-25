@@ -6,14 +6,14 @@ import {
 } from "@/icons";
 import { v4 as uuid } from "uuid";
 
-type Props = {
+export type FieldProps = {
   label: string;
   id: string;
 };
 
 type SIDEBAR_MENU_TYPE = {
   icon: React.ReactNode;
-} & Props;
+} & FieldProps;
 
 export const SIDEBAR_MENU: SIDEBAR_MENU_TYPE[] = [
   {
